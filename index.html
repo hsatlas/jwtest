@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>장원토건</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/main.css">
+
+        <script src="/js/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <div id="intro">
+            <video id="introVideo" autoplay muted playsinline>
+                <source src="/images/intro26.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- header-->
+        <nav>
+            <div class="container menu">
+                <a href="" class="logo">
+                    <span class="sr-only">장원토건</span>
+                </a>
+                <ul id="mainMenu"></ul>
+                <a href="" class="news">
+                    <span>News<br />Room</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <!-- Dots Navigation -->
+            <div class="nav-dots" id="dotNav">
+                <button class="dot-with-label active">
+                  <span class="dot-label">Main</span>
+                </button>
+                <button class="dot-with-label">
+                  <span class="dot-label">Special Messege</span>
+                </button>
+                <button class="dot-with-label">
+                  <span class="dot-label">Brand Messege</span>
+                </button>
+                <button class="dot-with-label">
+                  <span class="dot-label">Overview</span>
+                </button>
+                <button class="dot-with-label">
+                  <span class="dot-label">Vision</span>
+                </button>
+                <button class="dot-with-label">
+                  <span class="dot-label">News</span>
+                </button>
+            </div>
+
+            <!-- Main Video -->
+            <div class="section" id="section0">
+                <video id="mainVideo" muted playsinline loop>
+                    <source src="/images/JW_Video4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Special Story -->
+            <div class="section" id="section1">
+                <div class="special">
+                    <div class="container">
+                        <h1>The Future of Green <br />
+                        Construction Begins Here</h1>
+                        <p>친환경 건설의 미래, 장원토건이 시작합니다.</p>
+                    </div>
+                    <div class="icon-text">
+                        <span>Eco</span>
+                        <span>Safety</span>
+                        <span>Smart</span>
+                        <span>Harmony</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand Messege -->
+            <div class="section" id="section2">
+                <div class="horizontal-wrapper" id="horizontal">
+                    <div class="hr-slide">
+                        <div class="image-wrap circle" id="brand1">
+                            <img src="/images/section2_1.jpeg" alt="" />
+                        </div>
+                        <div class="brand-messege">
+                            <p>
+                                이제는 변혁의 새벽이 지나고, 따뜻한 내일의 태양이 비추듯<br />
+                                탄탄히 쌓아온 근본과 두터운 신뢰의 기반이 우리를 더욱 단단하게 합니다.<br />
+                                <br />
+                                수많은 갈림길 속에서도 오직, 고객의 신뢰를 바탕으로<br />
+                                더 바람직한 사회를 위한 하나의 길로 나아갑니다.<br />
+                                <br />
+                                모두가 하나로 단단하게, 중심을 이루는 균형이야말로<br />
+                                우리가 지향하는 가치입니다<br />
+                            </p>
+                            <img src="/images/brand_messege1.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="hr-slide">
+                        <div class="image-wrap square" id="brand2">
+                            <img src="/images/section2_2.jpeg" alt="" />
+                        </div>
+                        <div class="brand-messege">
+                            <p>
+                                바다 위 등대는 말합니다.<br />
+                                진정한 성공으로 가고 싶다면 속도보다 방향이 중요하다고<br />
+                                <br />
+                                비록, 조금 느려지더라도 모두가 옳다고 여기는<br />
+                                정직한 내일로의 점진적 성장을 추구합니다.<br />
+                                <br />
+                                거친 풍랑 속에서도 올바른 방향을 잡고<br />
+                                앞으로 나아갈 수 있도록 초심을 잃지 않는 투명 경영을 지향합니다<br />
+                            </p>
+                            <img src="/images/brand_messege2.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="hr-slide">
+                        <div class="image-wrap triangle" id="brand3">
+                            <img src="/images/section2_3.jpeg" alt="" />
+                        </div>
+                        <div class="brand-messege mt-50">
+                            <p>
+                                끝없는 우주와 자연의 미학은 우리의 무한한 창의성과<br />
+                                더 큰 미래로 나아가고자 하는 모험심을 일깨워줍니다.<br />
+                                <br />
+                                자연과 사람, 경제와 사회, 혁신과 보전 그 사이에서<br />
+                                우리가 이뤄 나가야 할 가장 완벽한 균형으로<br />
+                                함께 만드는 미래와 우리의 가능성은 더욱 찬란하게 빛날 것입니다.<br />
+                            </p>
+                            <img src="/images/brand_messege3.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div id="slideDots" class="slide-dots">
+                    <button data-index="0" class="active"></button>
+                    <button data-index="1"></button>
+                    <button data-index="2"></button>
+                </div>
+            </div>
+
+            <!-- Overview -->
+            <div class="section" id="section3">
+                <div class="accordion-wrap">
+                    <div class="panel">
+                        <div class="panel-bg overview1"></div>
+                        <div class="panel-title">
+                            <span>건축사업</span>
+                        </div>
+                        <div class="panel-content">
+                            <p>최신 건축 공법과 최고의 기술력으로 국가 기관, 정부 투자 기관, 공공 기관, 민간 시설 등
+                                다양한 건축 분야에서 두각을 나타냈으며, 앞으로도 고품질의 공법 개발을 통해 고객께 다가가겠습니다.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-bg overview2"></div>
+                        <div class="panel-title">
+                            <span>토목사업</span>
+                        </div>
+                        <div class="panel-content">
+                            <p>인간과 자연의 조화를 최우선시하며 달려온
+                                장원은 축적된 노하우와 기술력을 바탕으로
+                                친환경적인 토목분야에 선도기업이 되겠습니다</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-bg overview3"></div>
+                        <div class="panel-title">
+                            <span>조경사업</span>
+                        </div>
+                        <div class="panel-content">
+                            <p>인간의 감성과 자연의 조화, 자연과 시간이
+                                함께하는 공간, 쉼과 아름다움이 공존하는 자연의 미학으로 창조적인 생활공간을 제공하겠습니다.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-bg overview4"></div>
+                        <div class="panel-title">
+                            <span>기전사업</span>
+                        </div>
+                        <div class="panel-content">
+                            <p>축적된 기술과 선진기술을 적극 도입하여
+                                변화하는 고객의 요구에 신속하고 완벽하게
+                                대응함은 물론 발전, 플랜트, 전기 및 설비
+                                분야의 시너지 효과를 극대화하겠습니다.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Vision -->
+            <div class="section" id="section4">
+                <div class="vision">
+                    <h1>BUILD & BALANCE</h1>
+                    <p>단순한 건축을 넘어,  사람과 자연이 조화를 이루며 공존하는 공간을 만들어 가는 <b>우리의 철학</b>입니다. <br />
+                        우리는 기술과 감성을 아우르는 균형 잡힌 건축을 통해 <b>더 나은 삶의 가치</b>를 실현하고자 합니다.</p>
+                    <img src="/images/section3.png" alt="" />
+                </div>
+            </div>
+
+            <!-- News -->
+            <div class="section" id="section5">
+
+                <div class="container">
+                    <h1>NEWS and EVENTS</h1>
+
+                    <div class="news">
+                        <div class="news-list">
+                            <a class="new" href="">
+                                <div class="thumb">
+                                    <img src="/images/overview1.png" alt="" />
+                                </div>
+                                <div class="title">
+                                    <p>뉴스 타이틀 제목 영역 입니다.</p>
+                                </div>
+                                <span>내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. </span>
+                                <div class="date">
+                                    <span>2025.01.01</span>
+                                    <span>더보기</span>
+                                </div>
+                            </a>
+                            <a href="" class="new">
+                                <div class="thumb">
+                                    <img src="" alt="" />
+                                </div>
+                                <div class="title">
+                                    <p>제목이 길 경우 말줄임표로 출력됩니다. 제목이 길 경우 말줄임표로 출력됩니다. 제목이 길 경우 말줄임표로 출력됩니다. 제목이 길 경우 말줄임표로 출력됩니다. 제목이 길 경우 말줄임표로 출력됩니다. </p>
+                                </div>
+                                <span>내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. </span>
+                                <div class="date">
+                                    <span>2025.01.01</span>
+                                    <span>더보기</span>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="" alt="" />
+                                </div>
+                                <div class="title">
+                                    <p>뉴스 타이틀 제목 영역 입니다. </p>
+                                </div>
+                                <span>내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. </span>
+                                <div class="date">
+                                    <span>2025.01.01</span>
+                                    <span>더보기</span>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="" alt="" />
+                                </div>
+                                <div class="title">
+                                    <p>뉴스 타이틀 제목 영역 입니다. </p>
+                                </div>
+                                <span>내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. 내용이 들어갈 영역 입니다. </span>
+                                <div class="date">
+                                    <span>2025.01.01</span>
+                                    <span>더보기</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news-bottom">
+                            <div class="news-btns">
+                                <a href="" class="prev">
+                                    <span class="sr-only">이전</span>
+                                </a>
+                                <a href="" class="next">
+                                    <span class="sr-only">다음</span>
+                                </a>
+                            </div>
+                            <a href="">
+                                <span>more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="container">
+                        <ul id="footerMenu"></ul>
+                        <a href="#" class="top">
+                            <span class="sr-only">상단이동</span>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        <div class="container">
+                            <span>Copyright © 2025 Jangwon Construction. All rights reserved.</span>
+                            <img src="/images/hd_logo_wh160.png" alt="" />
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    <script src="/js/style.js"></script>
+    <script src="/js/menu.js"></script>
+</html>
