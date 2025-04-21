@@ -97,10 +97,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ⬅️➡️ SLIDE TRANSITION
     // --------------------------
     function moveToSlide(index) {
-    horizontal.style.transform = `translateX(-${index * 100}vw)`;
-    currentSlide = index;
-    updateSlideDots(index);
-    handleSectionAnimations(currentSection);
+        horizontal.style.transform = `translateX(-${index * 100}vw)`;
+        currentSlide = index;
+        updateSlideDots(index);
+        handleSectionAnimations(currentSection);
     }
 
     function updateSlideDots(index) {
@@ -110,24 +110,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function createSlideDots() {
-    const slideDots = document.getElementById('slideDots');
-    if (!slideDots) return;
+        const slideDots = document.getElementById('slideDots');
+        if (!slideDots) return;
 
-    for (let i = 0; i < 3; i++) {
-        const dot = document.createElement('button');
-        dot.dataset.index = i;
-        if (i === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => moveToSlide(i));
-        slideDots.appendChild(dot);
-    }
+        slideDots.innerHTML = '';
+
+        for (let i = 0; i < 3; i++) {
+            const dot = document.createElement('button');
+            dot.dataset.index = i;
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => moveToSlide(i));
+            slideDots.appendChild(dot);
+        }
     }
 
-    document.querySelectorAll('#slideDots button').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const index = Number(btn.dataset.index);
-        moveToSlide(index);
-    });
-    });
 
     // --------------------------
     // 🎯 DOT NAVIGATION
