@@ -99,8 +99,7 @@ html { scroll-behavior: smooth; }
 /* vision */
 #section4 { background: #eaeaea; }
 .vision { padding-top: 100px; text-align: center; position: relative; height: 100vh; }
-.vision > h1 { color: rgba(36, 42, 51, 0); font-family: "Segoe UI"; font-size: 120px; font-weight: 700; line-height: 100%; /* 120px */
- letter-spacing: 120px; white-space: nowrap; margin-top: 100px; transition: all 2s ease-in-out; }
+.vision > h1 { color: rgba(36, 42, 51, 0); font-family: "Segoe UI"; font-size: 120px; font-weight: 700; line-height: 100%; /* 120px */ letter-spacing: 120px; white-space: nowrap; margin-top: 100px; transition: all 2s ease-in-out; text-align: center; }
 .vision.active > h1 { font-size: 120px; color: rgba(36, 42, 51, 1); letter-spacing: 10px; transition: all 2s ease-in-out; }
 
 .vision > p { color: #242a33; text-align: center; font-size: 24px; font-weight: 400; line-height: 150%; /* 36px */
