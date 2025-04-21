@@ -1,0 +1,53 @@
+@import url(basic.css);
+@import url(common.css);
+
+html, body { margin: 0; padding: 0; }
+
+/* sub page */
+nav { background-color: #ffffff; top: 0; }
+
+.subpage { margin-top: 80px; overflow: auto; }
+.subpage > .top { width: 100%; height: 360px; position: relative; text-align: center; padding-top: 90px; }
+.subpage > .top > h1 { color: #FFF; font-family: "Noto Sans CJK KR"; font-size: 55px; font-weight: 300; line-height: 150%; /* 82.5px */ }
+.subpage > .top > p { color: rgba(255, 255, 255, 0.50);font-family: "Segoe UI";font-size: 25px;font-weight: 300;line-height: 150%; /* 37.5px */}
+
+.sub01 { background-image: url('/images/sub01.png'); }
+.sub02 { background-image: url('/images/sub02.png'); }
+.sub01 { background-image: url('/images/sub01.png'); }
+.sub01 { background-image: url('/images/sub01.png'); }
+.sub01 { background-image: url('/images/sub01.png'); }
+
+.page-header { display: flex; align-items: center; gap: 1px; position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); height: 65px; background-color: rgba(0, 0, 0, 0.5); }
+.breadcrumb { display: flex; align-items: center; justify-content: stretch; gap: 1px; height: 100%; }
+.breadcrumb > * { height: 100%; }
+.breadcrumb > .icon-home { display: inline-block; width: 65px; height: 66px; background-color: rgba(0, 0, 0, 0.3); background-image: url('/images/icons-home.png'); background-position: center; border-right: solid 1px rgba(255, 255, 255, 0.1); }
+.breadcrumb > .section-name { background-color: rgba(0, 0, 0, 0.2); min-width: 200px; display: flex; align-items: center; justify-content: flex-start; border-right: solid 1px rgba(255, 255, 255, 0.1); }
+.breadcrumb > .section-name > span { color: #ffffff; padding-left: 20px; color: #FFF; font-size: 22px; font-weight: 350; line-height: 150%; /* 33px */ }
+.custom-select { position: relative; min-width: 250px; background: rgba(0, 0, 0, 0.2); cursor: pointer; height: 100%; display: flex; justify-content: flex-start; align-items: center; border-right: solid 1px rgba(255, 255, 255, 0.1); }
+.custom-select .selected { color: #ffffff; padding-left: 20px; color: #FFF; font-size: 22px; font-weight: 350; line-height: 150%; }
+.custom-select .selected::after { content: url('/images/select-arrow.png'); position: absolute; right: 20px; top: 45%; transform: translateY(-50%); }
+.custom-select.open .selected::after { content: url('/images/select-arrow2.png'); }
+.select-options { position: absolute; top: 100%; left: 0; background: rgba(0, 0, 0, 0.8); width: 100%; display: none; z-index: 99; }
+.select-options li { padding: 8px 12px; color: #fff; border-bottom: solid 1px #d9d9d9; text-align: left; padding: 14px 22px; }
+.select-options li:hover { background-color: #3e3e50; }
+.select-options li:last-of-type { border-bottom: 0; }
+.custom-select.open .select-options { display: block; }
+
+.subpage > .content { padding: 85px 0; min-height: 300px; }
+
+.list > .list-top { margin-bottom: 20px; }
+.list > .list-top > span:nth-of-type(1) { color: #373D45; font-size: 20px; font-weight: 500; line-height: 100%; /* 20px */ letter-spacing: -1px; padding-left: 24px; background-image: url('/images/icons-bullet.png'); background-position: left 7px; }
+.list > .list-top > span:nth-of-type(2) { color: #A0ADC0; font-family: "Segoe UI"; font-size: 13px; font-weight: 300; line-height: 150%; /* 19.5px */
+padding-left: 5px; }
+
+.project-row { display: flex; flex-wrap: wrap; margin-bottom: 20px; gap: 20px; }
+.project-card { width: calc(25% - 15px); cursor: pointer; }
+.project-card img { width: 100%;}
+
+.slider-area { max-height: 0; overflow: hidden; background: #111; padding: 0 20px; position: relative; color: #fff; opacity: 0; transform: translateY(-10px); transition: max-height 0.6s ease, opacity 0.4s ease, transform 0.4s ease; }
+.slider-area.active { opacity: 1; transform: translateY(0); }
+
+.slider-header { text-align: right; margin-bottom: 10px; }
+.close-slider { font-size: 24px; color: white; background: none; border: none; cursor: pointer; }
+.swiper-slide img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.caption { margin-top: 10px; text-align: center; }
