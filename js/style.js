@@ -58,39 +58,54 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleSectionAnimations(index) {
-    const allImages = document.querySelectorAll('.image-wrap');
-    const allMessages = document.querySelectorAll('[class^="brand-messege"]');
-    const vision = document.querySelector('.vision');
+        const allImages = document.querySelectorAll('.image-wrap');
+        const allMessages = document.querySelectorAll('[class^="brand-messege"]');
+        const vision = document.querySelector('.vision');
 
-    allImages.forEach(img => img.classList.remove('clip-circle', 'clip-square', 'clip-triangle'));
-    allMessages.forEach(msg => {
-        msg.classList.remove('slide-fade');
-        msg.style.animation = 'none';
-        void msg.offsetWidth;
-        msg.style.animation = '';
-    });
+        allImages.forEach(img => img.classList.remove('clip-circle', 'clip-square', 'clip-triangle'));
+        allMessages.forEach(msg => {
+            msg.classList.remove('slide-fade');
+            msg.style.animation = 'none';
+            void msg.offsetWidth;
+            msg.style.animation = '';
+        });
 
-    if (index === 2) {
-        const currentSlideEl = document.querySelectorAll('.hr-slide')[currentSlide];
-        const image = currentSlideEl.querySelector('.image-wrap');
-        const message = currentSlideEl.querySelector('[class^="brand-messege"]');
+        if (index === 2) {
+            const currentSlideEl = document.querySelectorAll('.hr-slide')[currentSlide];
+            const image = currentSlideEl.querySelector('.image-wrap');
+            const message = currentSlideEl.querySelector('[class^="brand-messege"]');
 
-        setTimeout(() => {
-        if (image?.classList.contains('circle')) image.classList.add('clip-circle');
-        else if (image?.classList.contains('square')) image.classList.add('clip-square');
-        else if (image?.classList.contains('triangle')) image.classList.add('clip-triangle');
+            setTimeout(() => {
+            if (image?.classList.contains('circle')) image.classList.add('clip-circle');
+            else if (image?.classList.contains('square')) image.classList.add('clip-square');
+            else if (image?.classList.contains('triangle')) image.classList.add('clip-triangle');
 
-        message?.classList.add('slide-fade');
-        }, 100);
-    }
+            message?.classList.add('slide-fade');
+            }, 100);
+        }
 
-    // Section 3: deactivate all panels
-    document.querySelectorAll('.panel').forEach(panel => {
-        panel.classList.remove('active');
-    });
+        // Section 3: deactivate all panels
+        document.querySelectorAll('.panel').forEach(panel => {
+            panel.addEventListener('mouseenter', () => {
+                document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+                panel.classList.add('active');
+            });
 
-    // Section 4: activate vision
-    vision?.classList.toggle('active', index === 4);
+            panel.addEventListener('mouseleave', () => {
+                panel.classList.remove('active');
+            });
+        });
+
+
+        // Section 4: activate vision
+        vision?.classList.toggle('active', index === 4);
+
+        const spans = document.querySelectorAll('.vision h1 span');
+        const mid = Math.floor(spans.length / 2);
+
+        spans.forEach((span, i) => {
+            span.style.setProperty('--offset', (i - mid) * 0.2); // 예: -1.2, -1.0, ..., 0, ..., 1.0
+        });
     }
 
     // --------------------------
@@ -212,16 +227,6 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(() => {
         sections.forEach(section => section.style.transition = 'transform 0.8s ease');
         horizontal.style.transition = 'transform 0.8s ease';
-    });
-
-    // 패널 클릭 이벤트
-    const panels = document.querySelectorAll('.panel');
-    panels.forEach(panel => {
-        panel.addEventListener('click', () => {
-        const isActive = panel.classList.contains('active');
-        panels.forEach(p => p.classList.remove('active'));
-        if (!isActive) panel.classList.add('active');
-        });
     });
 
     createSlideDots();
