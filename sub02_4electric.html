@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="./css/style.css">
 
         <script src="./js/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css" />
+        <script src="./js/swiper/swiper-bundle.min.js"></script>
     </head>
     <body>
         <!-- header-->
@@ -26,7 +28,7 @@
         <div class="subpage">
             <!-- sub header -->
             <div class="top sub02">
-                <h1>기전사업업</h1>
+                <h1>기전사업</h1>
                 <p>ELECTRIC INDUSTRY</p>
                 <div class="page-header container">
                     <div class="breadcrumb">
@@ -52,7 +54,32 @@
             <div class="content">
                 <div class="container">
 
+                    <div class="list">
+                        <div class="list-top">
+                            <span>기전 사업 사례</span>
+                            <span>ELECTRIC PROJECT</span>
+                        </div>
 
+                        <div class="content-wrapper">
+                            <div id="projectContainer" class="project-grid"></div>
+                            <div class="pagination"></div>
+
+                            <!-- 슬라이드 캐러셀 영역 -->
+                            <div id="sliderArea" class="slider-area">
+                                <div class="slider-header">
+                                    <button class="close-slider">
+                                        <span class="sr-only">닫기</span>
+                                    </button>
+                                </div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper" id="swiperWrapper"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,4 +101,5 @@
         </footer>
     </body>
     <script src="./js/menu.js"></script>
+    <script src="./js/data/electricalData.js"></script>
 </html>
