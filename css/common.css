@@ -1,46 +1,214 @@
 /* navigation */
-nav { position: fixed; z-index: 1; width: 100%; height: 80px; display: flex; border-bottom: solid 1px #d9d9d94d; }
-nav > div { display: flex; align-items: center; justify-content: space-between; }
-nav .menu > .logo { background-image: url("../images/hd_logo_wh.png"); display: inline-block; width: 165px; height: 50px; transition: 0.12s; }
-nav .menu > ul { margin-right: 200px; display: flex; gap: 80px; align-self: stretch; }
-nav .menu > ul > li { padding: 0 20px; }
-nav .menu > ul > li > a { color: #ffffff; display: inline-block; height: 100%; padding-top: 30px; font-weight: 500; position: relative; }
-nav .menu > ul > li > a.active::after { content: ""; position: absolute; width: 100%; height: 3px; background-color: #004098; bottom: 0; left: 0; }
-nav .menu ul ul { position: absolute; display: flex; flex-direction: column; padding: 26px 0 46px; display: none; }
+nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    border-bottom: solid 1px #d9d9d94d;
+}
+nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .menu > .logo {
+    background-image: url("../images/hd_logo_wh.png");
+    display: inline-block;
+    width: 165px;
+    height: 50px;
+    transition: 0.12s;
+}
+nav .menu > ul {
+    margin-right: 200px;
+    display: flex;
+    gap: 80px;
+    align-self: stretch;
+}
+nav .menu > ul > li {
+    padding: 0 20px;
+}
+nav .menu > ul > li > a {
+    color: #ffffff;
+    display: inline-block;
+    height: 100%;
+    padding-top: 30px;
+    font-weight: 500;
+    position: relative;
+}
+nav .menu > ul > li > a.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #004098;
+    bottom: 0;
+    left: 0;
+}
+nav .menu ul ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 26px 0 46px;
+    display: none;
+}
 
-nav.change { border-bottom: solid 1px #f0f3f7; background-color: #ffffff; }
-nav .menu.open > .logo { background-image: url("../images/hd_logo_bon.png"); transition: 0.12s; }
-nav .menu.open > ul::before { content: ""; position: fixed; top: 80px; left: 0; width: 100%; height: 260px; background-color: white; background-image: url("../images/bg_logo_eng.png"); background-repeat: no-repeat; background-size: 35% auto; background-position: -30px 0; }
-nav .menu.open > ul > li > a { color: #000000; }
+nav.change {
+    border-bottom: solid 1px #f0f3f7;
+    background-color: #ffffff;
+}
+nav .menu.open > .logo {
+    background-image: url("../images/hd_logo_bon.png");
+    transition: 0.12s;
+}
+nav .menu.open > ul::before {
+    content: "";
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 260px;
+    background-color: white;
+    background-image: url("../images/bg_logo_eng.png");
+    background-repeat: no-repeat;
+    background-size: 35% auto;
+    background-position: -30px 0;
+}
+nav .menu.open > ul > li > a {
+    color: #000000;
+}
 
-nav .menu.open ul ul { display: block; }
-nav .menu ul ul > li { line-height: 210%; }
-nav .menu ul ul > li > a > span { color: #373d45; font-size: 13px; font-weight: 400; transition: 0.2s; position: relative; }
-nav .menu ul ul > li > a:hover > span { font-weight: 700; }
-nav .menu ul ul > li > a:hover > span::after { content: ""; position: absolute; width: 5px; height: 5px; background-color: #004098; border-radius: 20px; right: -9px; top: 0px; }
+nav .menu.open ul ul {
+    display: block;
+}
+nav .menu ul ul > li {
+    line-height: 210%;
+}
+nav .menu ul ul > li > a > span {
+    color: #373d45;
+    font-size: 13px;
+    font-weight: 400;
+    transition: 0.2s;
+    position: relative;
+}
+nav .menu ul ul > li > a:hover > span {
+    font-weight: 700;
+}
+nav .menu ul ul > li > a:hover > span::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #004098;
+    border-radius: 20px;
+    right: -9px;
+    top: 0px;
+}
 
-nav.dark { border-bottom: solid 1px #f0f3f7; }
-nav.dark .menu > .logo { background-image: url("../images/hd_logo_bon.png"); }
-nav.dark .menu > ul > li > a { color: #000000; }
+nav.dark {
+    border-bottom: solid 1px #f0f3f7;
+}
+nav.dark .menu > .logo {
+    background-image: url("../images/hd_logo_bon.png");
+}
+nav.dark .menu > ul > li > a {
+    color: #000000;
+}
 
-nav .news { position: absolute; right: -100px; width: 77px; height: 114px; border-radius: 0px 0px 10px 10px; background-color: #f3af31; background-image: url("../images/icons-newroom.png"); background-position: center 25px; transition: 0.15s; z-index: 1000; }
-nav .news:hover { background-color: #d37407; }
-nav .news > span { color: #fff; font-family: "Segoe UI"; font-size: 18px; font-weight: 400; line-height: 18px; /* 100% */
+nav .news {
+    position: absolute;
+    right: -100px;
+    width: 77px;
+    height: 114px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #f3af31;
+    background-image: url("../images/icons-newroom.png");
+    background-position: center 25px;
+    transition: 0.15s;
+    z-index: 1000;
+}
+nav .news:hover {
+    background-color: #d37407;
+}
+nav .news > span {
+    color: #fff;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px; /* 100% */
 
- position: absolute; bottom: 16px; left: 50%; transform: translate(-50%, 0); text-align: center; }
-nav .sub-menu { position: absolute; background-color: #ffffff; top: 80px; width: 100%; background-image: url("../images/bg_logo_eng.png"); background-position-x: 11%; display: none; }
-nav .sub-menu.open { display: block; }
-nav .sub-menu .depth { padding: 26px 0 46px 408px; display: flex; }
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+nav .sub-menu {
+    position: absolute;
+    background-color: #ffffff;
+    top: 80px;
+    width: 100%;
+    background-image: url("../images/bg_logo_eng.png");
+    background-position-x: 11%;
+    display: none;
+}
+nav .sub-menu.open {
+    display: block;
+}
+nav .sub-menu .depth {
+    padding: 26px 0 46px 408px;
+    display: flex;
+}
 
 /* footer */
-footer { background-color: #004098; }
-footer > .container { padding-top: 73px; position: relative; }
-footer > .container > a.top { display: inline-block; width: 35px; height: 35px; background-image: url("../images/icons-top.png"); background-position: center; position: absolute; right: 0; top: 100px; }
-footer > .container > ul { display: flex; gap: 100px; padding-bottom: 52px; }
-footer > .container > ul > li > span { display: inline-block; color: #fff; font-size: 18px; font-weight: 500; line-height: 150%; /* 27px */
- margin-bottom: 15px; }
-footer > .container > ul ul > li > a > span { color: #fff; font-size: 13px; font-style: normal; line-height: 210%; /* 27.3px */ }
+footer {
+    background-color: #004098;
+}
+footer > .container {
+    padding-top: 73px;
+    position: relative;
+}
+footer > .container > a.top {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/icons-top.png");
+    background-position: center;
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+footer > .container > ul {
+    display: flex;
+    gap: 100px;
+    padding-bottom: 52px;
+}
+footer > .container > ul > li > span {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+    margin-bottom: 15px;
+}
+footer > .container > ul ul > li > a > span {
+    color: #fff;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 210%; /* 27.3px */
+}
 
-footer > .copyright { border-top: solid 1px #f2f2f21a; }
-footer > .copyright > .container { padding: 48px 0 40px; display: flex; justify-content: space-between; }
-footer > .copyright > .container > span { color: #fff; font-size: 12px; font-weight: 700; line-height: 150%; /* 18px */ }
+footer > .copyright {
+    border-top: solid 1px #f2f2f21a;
+}
+footer > .copyright > .container {
+    padding: 48px 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+footer > .copyright > .container > span {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%; /* 18px */
+}
