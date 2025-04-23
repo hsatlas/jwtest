@@ -1,87 +1,382 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <title>장원토건</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/style.css">
+	<head>
+		<title>장원토건</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/style.css">
 
-        <script src="./js/jquery-3.7.1.min.js"></script>
-    </head>
-    <body>
-        <!-- header-->
-        <nav class="dark">
-            <div class="container menu">
-                <a href="" class="logo">
-                    <span class="sr-only">장원토건</span>
-                </a>
-                <ul id="mainMenu"></ul>
-                <a href="" class="news">
-                    <span>News<br />Room</span>
-                </a>
-            </div>
-        </nav>
+		<script src="./js/jquery-3.7.1.min.js"></script>
+		<link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css" />
+		<script src="./js/swiper/swiper-bundle.min.js"></script>
+	</head>
+	<body>
+		<!-- header-->
+		<nav class="dark">
+			<div class="container menu">
+				<a href="" class="logo">
+					<span class="sr-only">장원토건</span>
+				</a>
+				<ul id="mainMenu"></ul>
+				<a href="" class="news">
+					<span>News<br />Room</span>
+				</a>
+			</div>
+		</nav>
 
-        <!-- content -->
-        <div class="subpage">
-            <!-- sub header -->
-            <div class="top sub01">
-                <h1>주요연혁</h1>
-                <p>HISTORY</p>
-                <div class="page-header container">
-                    <div class="breadcrumb">
-                        <a class="icon-home" href="">
-                            <span class="sr-only">메인</span>
-                        </a>
-                        <div class="section-name">
-                            <span>회사소개</span>
-                        </div>
-                    </div>
-                    <div class="custom-select" id="subpageSelect">
-                        <div class="selected">주요연혁</div>
-                        <ul class="select-options">
-                            <li data-value="sub01_1ceo.html">CEO인사말</li>
-                            <li data-value="sub01_3faith.html">경영이념</li>
-                            <li data-value="sub01_4moto.html">사훈</li>
-                            <li data-value="sub01_5ci.html">CI소개</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+		<!-- content -->
+		<div class="subpage">
+			<!-- sub header -->
+			<div class="top sub01">
+				<h1>주요연혁</h1>
+				<p>HISTORY</p>
+				<div class="page-header container">
+					<div class="breadcrumb">
+						<a class="icon-home" href="">
+							<span class="sr-only">메인</span>
+						</a>
+						<div class="section-name">
+							<span>회사소개</span>
+						</div>
+					</div>
+					<div class="custom-select" id="subpageSelect" data-menu="introduce">
+						<div class="selected">메뉴 선택</div>
+						<ul class="select-options"></ul>
+					</div>
+				</div>
+			</div>
 
-            <!-- sub content -->
-            <div class="content">
-                <div class="">
-                    <p>장원토건은 사회의 공익을 위해 지금까지
+			<!-- sub content -->
+			<div class="content">
+				<div class="container">
+					<div class="history-top">
+						<p>장원토건은 사회의 공익을 위해 지금까지 <span>창의적인 생각</span>과 <span>도전정신</span>을 바탕으로<br />
+						고객 감동을 추구하는 <span>정직한</span>,
+						<span>멋있는 기업</span>으로 꾸준히 성장과 발전을 거듭하고 있습니다. </p>
+					</div>
+				</div>
+				<div class="history-cont">
+					<div class="container">
+						<div class="tabs">
+							<div class="tab-btns">
+								<a href="" class="tab-button active" data-target="tab1">
+									<span>현재~2020</span>
+								</a>
+								<a href="" class="tab-button" data-target="tab2">
+									<span>2019~2010</span>
+								</a>
+								<a href="" class="tab-button" data-target="tab3">
+									<span>2009~1999</span>
+								</a>
+							</div>
+							<div class="tab-content">
+								<div class="history-box active" id="tab1">
+									<div class="line-bg"></div>
+									<div class="line-fill" id="scroll-line"></div>
 
-                        창의적인 생각과 도전정신을 바탕으로
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2023</h1>
+												<ul>
+													<li><span>07</span><span>토목공사업 등록(㈜제이디건설)</span></li>
+												</ul>
+											</div>
+										</div>
+									</section>
 
-                        고객 감동을 추구하는, 정직한, 멋있는기업으로
+									<section>
+									<div class="year-box">
+										<div class="year-box-list">
+										<h1>2022</h1>
+										<ul>
+											<li><span>03</span><span>㈜장원산업개발 → ㈜제이디건설 상호변경</span></li>
+											<li><span>01</span><span>건축공사업 등록(㈜제이디건설)</span></li>
+										</ul>
+										</div>
+									</div>
+									</section>
 
-                        꾸준히 성장과 발전을 거듭하고 있습니다. </p>
-                </div>
-                <div class="container">
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2021</h1>
+												<ul>
+													<li><span>06</span><span>21년 건설의 날 국토교통부장관 표창장 수상</span></li>
+													<li><span>06</span><span>신용등급 우수기업 인증</span></li>
+												</ul>
+											</div>
+											<div class="thumbnails">
+												<img src="./images/sub00/2021-06-1.jpg" class="thumbnail" data-full="./images/sub00/2021-06-1.jpg" data-caption="21년 건설의 날 국토교통부장관 표창장 수상" />
+												<img src="./images/sub00/2021-06-2.jpeg" class="thumbnail" data-full="./images/sub00/2021-06-2.jpeg" data-caption="신용등급 우수기업 인증" />
+											</div>
+										</div>
+									</section>
 
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2020</h1>
+												<ul>
+													<li><span>12</span><span>부동산개발업 등록(㈜장원토건)</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="thumbnails">
+											<img src="./images/sub00/2020-12.jpeg" class="thumbnail" data-full="./images/sub00/2020-12.jpeg" data-caption="부동산개발업 등록(㈜장원토건)" />
+										</div>
+									</section>
+								</div>
 
-                </div>
-            </div>
-        </div>
+								<div class="history-box" id="tab2">
+									<div class="line-bg"></div>
+									<div class="line-fill" id="scroll-line"></div>
 
-        <!-- footer -->
-        <footer>
-            <div class="container">
-                <ul id="footerMenu"></ul>
-                <a href="#" class="top">
-                    <span class="sr-only">상단이동</span>
-                </a>
-            </div>
-            <div class="copyright">
-                <div class="container">
-                    <span>Copyright © 2025 Jangwon Construction. All rights reserved.</span>
-                    <img src="./images/hd_logo_wh160.png" alt="" />
-                </div>
-            </div>
-        </footer>
-    </body>
-    <script src="./js/menu.js"></script>
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2019</h1>
+												<ul>
+													<li><span>12</span><span>대전광역시 표창장 수상</span></li>
+													<li><span>10</span><span>제 21회 대전시 건축대상 금상 수상(관평동성당 신축공사)</span></li>
+													<li><span>10</span><span>주택건설사업자 등록(㈜장원토건)</span></li>
+													<li><span>06</span><span>신용등급 우수기업 인증</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="thumbnails">
+											<img src="./images/sub00/2019-12.jpeg" class="thumbnail" data-full="./images/sub00/2019-12.jpeg" data-caption="대전광역시 표창장 수상" />
+											<img src="./images/sub00/2019-10.jpeg" class="thumbnail" data-full="./images/sub00/2019-10.jpeg" data-caption="주택건설사업자 등록(㈜장원토건)" />
+										</div>
+									</section>
+
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2017</h1>
+												<ul>
+													<li><span>08</span><span>기술평가 우수기업 인증</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="thumbnails">
+											<img src="./images/sub00/2017-08.jpeg" class="thumbnail" data-full="./images/sub00/2017-08.jpeg" data-caption="기술평가 우수기업 인증" />
+										</div>
+									</section>
+
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2015</h1>
+												<ul>
+													<li><span>10</span><span>대한민국 녹색건축대전 우수상 수상<br />
+														(한국에너지기술연구원 첨단에코에너지 연구센터)</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="thumbnails">
+											<img src="./images/sub00/2015-10.jpeg" class="thumbnail" data-full="./images/sub00/2015-10.jpeg" data-caption="대한민국 녹색건축대전 우수상 수상" />
+										</div>
+									</section>
+
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2014</h1>
+												<ul>
+													<li><span>12</span><span>대전광역시 건설시공품질 우수업체 표창</span></li>
+													<li><span>11</span><span>제9회 대한민국 생태환경 환경부장관상 건축대상 수상</span></li>
+													<li><span>09</span><span>대전광역시 200억 매출의 탑 수상</span></li>
+													<li><span>04</span><span>대전광역시 표창장 수상</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="thumbnails">
+											<img src="./images/sub00/2014-12.jpeg" class="thumbnail" data-full="./images/sub00/2014-12.jpeg" data-caption="대전광역시 건설시공품질 우수업체 표창" />
+											<img src="./images/sub00/2014-11.jpeg" class="thumbnail" data-full="./images/sub00/2014-11.jpeg" data-caption="제9회 대한민국 생태환경 환경부장관상 건축대상 수상" />
+											<img src="./images/sub00/2014-09.jpg" class="thumbnail" data-full="./images/sub00/2014-09.jpg" data-caption="대전광역시 200억 매출의 탑 수상" />
+										</div>
+									</section>
+
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2011</h1>
+												<ul>
+													<li><span>05</span><span>대전광역시 표창장 수상</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="thumbnails">
+											<img src="./images/sub00/2011-05.jpg" class="thumbnail" data-full="./images/sub00/2011-05.jpg" data-caption="대전광역시 표창장 수상" />
+										</div>
+									</section>
+
+									<section>
+									<div class="year-box">
+										<div class="year-box-list">
+										<h1>2010</h1>
+										<ul>
+											<li><span>12</span><span>외삼동 사옥 신축이전</span></li>
+										</ul>
+										</div>
+									</div>
+									</section>
+								</div>
+
+								<div class="history-box" id="tab3">
+									<div class="line-bg"></div>
+									<div class="line-fill" id="scroll-line"></div>
+
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2008</h1>
+												<ul>
+													<li><span>12</span><span>대전광역시 표창장 수상</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="thumbnails">
+											<img src="./images/sub00/2008-12.gif" class="thumbnail" data-full="./images/sub00/2008-12.gif" data-caption="대전광역시 표창장 수상" />
+										</div>
+									</section>
+
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2006</h1>
+												<ul>
+													<li><span>06</span><span>조경공사업 등록(㈜장원토건)</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="thumbnails">
+											<img src="./images/sub00/2006-06.jpeg" class="thumbnail" data-full="./images/sub00/2006-06.jpeg" data-caption="조경공사업 등록(㈜장원토건)" />
+										</div>
+									</section>
+
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2004</h1>
+												<ul>
+													<li><span>08</span><span>토목건축공사업 등록(㈜장원토건)</span></li>
+													<li><span>07</span><span>전문소방공사업 등록(㈜장원토건)</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="thumbnails">
+											<img src="./images/sub00/2004-08.jpeg" class="thumbnail" data-full="./images/sub00/2004-08.jpeg" data-caption="토목건축공사업 등록(㈜장원토건)" />
+											<img src="./images/sub00/2004-07.jpeg" class="thumbnail" data-full="./images/sub00/2004-07.jpeg" data-caption="전문소방공사업 등록(㈜장원토건)" />
+										</div>
+									</section>
+
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2001</h1>
+												<ul>
+													<li><span>09</span><span>제 13회 대전광역시 건축상 수상(대전지족중 신축공사)</span></li>
+													<li><span>07</span><span>기계설비공사업 등록(㈜제이디건설)</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="thumbnails">
+											<img src="./images/sub00/2001-09.jpeg" class="thumbnail" data-full="./images/sub00/2001-09.jpeg" data-caption="제 13회 대전광역시 건축상 수상(대전지족중 신축공사)" />
+										</div>
+									</section>
+
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>2000</h1>
+												<ul>
+													<li><span>08</span><span>토목공사업 등록(㈜장원토건)</span></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+
+									<section>
+										<div class="year-box">
+											<div class="year-box-list">
+												<h1>1999</h1>
+												<ul>
+													<li><span>09</span><span>전기공사업 등록(㈜장원토건)</span></li>
+													<li><span>07</span><span>건축공사업 등록(㈜장원토건)</span></li>
+													<li><span>06</span><span>㈜장원토건 설립</span></li>
+													<li><span>06</span><span>시설물 유지관리업 등록(㈜제이디건설)</span></li>
+													<li><span>05</span><span>㈜장원산업개발 설립</span></li>
+												</ul>
+											</div>
+										</div>
+										<div class="thumbnails">
+											<img src="./images/sub00/1999-09.jpeg" class="thumbnail" data-full="./images/sub00/1999-09.jpeg" data-caption="전기공사업 등록(㈜장원토건)" />
+											<img src="./images/sub00/1999-06.jpeg" class="thumbnail" data-full="./images/sub00/1999-06.jpeg" data-caption="㈜장원토건 설립" />
+										</div>
+									</section>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<ul id="footerMenu"></ul>
+				<a href="#" class="top">
+					<span class="sr-only">상단이동</span>
+				</a>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<span>Copyright © 2025 Jangwon Construction. All rights reserved.</span>
+					<img src="./images/hd_logo_wh160.png" alt="" />
+				</div>
+			</div>
+		</footer>
+
+		<!-- modal -->
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<button id="closeModalBtn" class="close" type="button">
+					<span class="sr-only">모달 닫기</span>
+				</button>
+				<h2 id="modalTitle"></h2>
+				<div class="modal-image">
+					<img id="modalImage" src="" alt="모달 이미지" />
+				</div>
+			</div>
+		  </div>
+	</body>
+	<script src="./js/menu.js"></script>
+	<script src="./js/content.js"></script>
+	<script>
+	document.querySelectorAll('.thumbnail').forEach(thumb => {
+		thumb.addEventListener('click', () => {
+			const fullImg = thumb.dataset.full;
+			const caption = thumb.dataset.caption;
+
+			document.getElementById('modalImage').src = fullImg;
+			document.getElementById('modalTitle').textContent = caption;
+			document.getElementById('modal').style.display = 'block';
+		});
+	});
+
+	document.getElementById('closeModalBtn').addEventListener('click', () => {
+		document.getElementById('modal').style.display = 'none';
+	});
+
+	window.addEventListener('click', (e) => {
+		if (e.target.id === 'modal') {
+			document.getElementById('modal').style.display = 'none';
+		}
+	});
+	</script>
 </html>
