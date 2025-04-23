@@ -7,7 +7,7 @@ const menuData = [
     submenu: [
         { name: "CEO인사말", link: "sub01_1ceo.html" },
         { name: "주요연혁", link: "sub01_2history.html" },
-        { name: "경영이념", link: "sub01_3faith.html" },
+        { name: "경영상태", link: "sub01_3financial.html" },
         { name: "사훈", link: "sub01_4moto.html" },
         { name: "CI소개", link: "sub01_5ci.html" }
     ]
@@ -131,36 +131,6 @@ if (footerMenu) {
 
     li.appendChild(subUl);
     footerMenu.appendChild(li);
-    });
-}
-
-// --------------------
-// SUB 상단 메뉴
-// --------------------
-const select = document.getElementById("subpageSelect");
-    if (select) {
-    const selected = select.querySelector(".selected");
-    const options = select.querySelector(".select-options");
-
-    selected.addEventListener("click", () => {
-        select.classList.toggle("open");
-    });
-
-    options.querySelectorAll("li").forEach(option => {
-        option.addEventListener("click", () => {
-        selected.textContent = option.textContent;
-        select.classList.remove("open");
-
-        // ✅ 이동
-        const url = option.getAttribute('data-value');
-        if (url) location.href = url;
-        });
-    });
-
-    document.addEventListener("click", (e) => {
-        if (!select.contains(e.target)) {
-        select.classList.remove("open");
-        }
     });
 }
 
