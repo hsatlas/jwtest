@@ -1,14 +1,14 @@
 const data = [
-    { title: "춘천 숲체원 신규조성 조경공사", thumb: "../images/sub01/03_1/c2.jpg", detail: "발주처 한국산림복지진흥원" },
-    { title: "대전과학기술대학교 체육관 신축 조경공사", thumb: "../images/sub01/03_1/c3.jpg", detail: "발주처 대전과학기술대학교" },
-    { title: "정읍 안전성 평가 시험연구동 건설사업 조경공사", thumb: "../images/sub01/03_1/c4.jpg", detail: "발주처 안전성평가연구소" },
-    { title: "대청댐 시민휴식공간 조성사업", thumb: "../images/sub01/03_1/c5.jpg", detail: "발주처 대전광역시 대덕구" },
-    { title: "대전연구개발특구 1단계 조경공사", thumb: "../images/sub01/03_1/c6.jpg", detail: "발주처 한국토지주택공사" },
-    { title: "대전도안신도시 조경공사", thumb: "../images/sub01/03_1/c7.jpg", detail: "발주처 한국토지주택공사" },
-    { title: "대전과학기술대학교 혜천관 증축 조경공사", thumb: "../images/sub01/03_1/c8.jpg", detail: "발주처 대전과학기술대학교" },
-    { title: "대전 하소일반산업단지 조경공사", thumb: "../images/sub01/03_1/c9.jpg", detail: "발주처 대전도시공사" },
-    { title: "대전 뿌리공원 정비사업 조경공사", thumb: "../images/sub01/03_1/c10.jpg", detail: "발주처 대전광역시 중구" },
-    { title: "대전 대덕구 마을쉼터 조성공사", thumb: "../images/sub01/03_1/c11.jpg", detail: "발주처 대전광역시 대덕구" },
+    { title: "춘천 숲체원 신규조성 조경공사", thumb: "./images/sub01/03_1/c2.jpg", detail: "발주처 한국산림복지진흥원" },
+    { title: "대전과학기술대학교 체육관 신축 조경공사", thumb: "./images/sub01/03_1/c3.jpg", detail: "발주처 대전과학기술대학교" },
+    { title: "정읍 안전성 평가 시험연구동 건설사업 조경공사", thumb: "./images/sub01/03_1/c4.jpg", detail: "발주처 안전성평가연구소" },
+    { title: "대청댐 시민휴식공간 조성사업", thumb: "./images/sub01/03_1/c5.jpg", detail: "발주처 대전광역시 대덕구" },
+    { title: "대전연구개발특구 1단계 조경공사", thumb: "./images/sub01/03_1/c6.jpg", detail: "발주처 한국토지주택공사" },
+    { title: "대전도안신도시 조경공사", thumb: "./images/sub01/03_1/c7.jpg", detail: "발주처 한국토지주택공사" },
+    { title: "대전과학기술대학교 혜천관 증축 조경공사", thumb: "./images/sub01/03_1/c8.jpg", detail: "발주처 대전과학기술대학교" },
+    { title: "대전 하소일반산업단지 조경공사", thumb: "./images/sub01/03_1/c9.jpg", detail: "발주처 대전도시공사" },
+    { title: "대전 뿌리공원 정비사업 조경공사", thumb: "./images/sub01/03_1/c10.jpg", detail: "발주처 대전광역시 중구" },
+    { title: "대전 대덕구 마을쉼터 조성공사", thumb: "./images/sub01/03_1/c11.jpg", detail: "발주처 대전광역시 대덕구" },
 ];
 
 const ITEMS_PER_PAGE = 8;
