@@ -455,6 +455,10 @@ html {
     transform: translateX(calc(var(--offset, 0) * 100vw));
     transition: transform 2s ease, opacity 1.5s ease;
 }
+.vision h1 span.several {
+    font-weight: 100;
+
+}
 .vision.active h1 span {
     transform: translateY(0);
     opacity: 1;
